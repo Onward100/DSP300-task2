@@ -1,0 +1,250 @@
+*{
+  padding: 0;
+  margin: 0;
+}
+body{
+  background-color: #FEF7E8;
+  font-family: "Roboto", sans-serif;
+}
+.container{
+  position: relative;
+  width: 100%;
+}
+.header{
+  display: flex;
+  width: 90%;
+  margin: auto;
+  justify-content: space-between;
+  padding: 10px 0;
+}
+.header img{
+  width: 150px;
+  height: 150px;
+  margin-top: -40px;
+  margin-left: -20px;
+}
+.bg-side{
+  position: absolute;
+  background-color: #FADAC4;
+  border-radius: 0 390px 450px 0px;
+  width: 100%;
+  height: 100vh;
+}
+.body-content{
+  display: block;
+}
+.nav-links{
+  display: none;
+}
+.menu{
+  display: block;
+}
+.menu .fa-bars{
+  font-size: 30px;
+  color: #F47D2D;
+  padding-top: 20px;
+}
+.shop{
+  display: none;
+}
+.shop a{
+  display: block;
+  padding: 10px 30px;
+  background-color: #F47D2D;
+  color: white;
+  text-decoration: none;
+  border-radius: 15px;
+  font-weight: bold;
+}
+.bg-img{
+  width: 97%;
+  margin: auto;
+  position: relative;
+}
+.bg-img .img{
+  width: 100%;
+  margin-top: -90px;
+  transform: scale(.8);
+}
+.text-overlay{
+  position: absolute;
+  background-color: white;
+  border-radius: 20px;
+  display: flex;
+  top: 357px;
+  gap: 20px;
+  vertical-align: middle;
+  padding: 20px 10px 30px 10px;
+  width: 95.5%;
+  margin: auto;
+}
+.text-overlay img{
+  width: 40px;
+  height: 40px;
+  border-radius: 600px;
+}
+.overlay-text h4{
+  margin-bottom: 5px;
+}
+.overlay-text p{
+  font-size: 15px;
+  margin-bottom: 5px;
+}
+.overlay-text i{
+  color: red;
+}
+
+.text-content{
+  width: 90%;
+  margin: auto;
+  margin-top: -30px;
+}
+
+.text-content p{
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+
+.text-content h1{
+  margin-bottom: 30px;
+  font-size: 35px;
+}
+.input-content{
+  border: 2px solid black;
+  outline: none;
+  border-radius: 50px;
+  background-color: white;
+  padding: 6px;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 40px;
+}
+.input-content input{
+  border: none;
+  padding: 8px;
+  outline: none;
+  background-color: none;
+}
+.input-content button{
+  border: none;
+  outline: none;
+  padding: 9px 25px;
+  background-color: black;
+  color: white;
+  border-radius: 30px;
+  font-weight: bold;
+}
+.social-icon{
+  display: flex;
+  justify-content: space-between;
+  transition: .2s ease;
+}
+.social-icon i{
+  border: 1px solid black;
+  padding: 11px;
+  border-radius: 200px;
+  transition: .2s ease;
+}
+.social-icon i:hover{
+  border:  1px solid #F47D2D;
+}
+.social-icon i:hover{
+  color: #F47D2D;
+  transition: .2s ease;
+}
+
+@media screen and (min-width: 640px){
+  .nav-links{
+    display: block;
+    padding-top: 10px;
+  }
+  .nav-links ul{
+    display: flex;
+    gap: 70px;
+  }
+  .nav-links li{
+    list-style-type: none;
+  }
+  .nav-links a{
+    text-decoration: none;
+    color: #F47D2D;
+    transition: .2s ease;
+  }
+  .nav-links a:hover{
+    color: black;
+  }
+  .shop{
+    display: block;
+    padding-top: -30px;
+    position: relative;
+    left: -100px;
+  } 
+  .menu{
+    display: none;
+  }
+  .bg-side{
+    right: 0;
+    width: 53%;
+    height: 100vh;
+    border-radius: 350px;
+    top: -40px;
+  }
+  .bg-img{
+    width: 50%;
+    position: relative;
+    left: -70px;
+  }
+  .bg-img .img{
+    width: 50%;
+    margin-left: 200px;
+  }
+  .body-content{
+    display: flex;
+    flex-direction: row-reverse;
+    width: 90%;
+    margin: auto;
+    gap: 100px;
+  }
+  .bg-img{
+    width: 50%;
+  }
+  .text-content{
+    width: 40%;
+    padding-top: 70px;
+  }
+  .text-content h1{
+    font-size: 60px;
+    font-weight: bold;
+  }
+  .input-content{
+    padding: 4px 6px;
+  }
+  .input-content input{
+    padding: 15px 9px;
+    background: none;
+  }
+  .input-content button{
+    padding: 10px 40px;
+  }
+  .bg-img .img{
+   margin-top: -100px;
+   transform: scale(.9);
+  }
+  .text-overlay{
+    width: 65%;
+    top: 300px;
+    left: 80px;
+  }
+  .social-icon{
+    justify-content: start;
+    gap: 60px;
+    transition: .2s ease;
+  }
+  .social-icon i:hover{
+    border:  1px solid #F47D2D;
+  }
+  .social-icon i:hover{
+    color: #F47D2D;
+    transition: .2s ease;
+  }
+}
